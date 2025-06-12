@@ -1,0 +1,81 @@
+{
+  "name": "social-media-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for posting content to social media platforms",
+  "main": "dist/bin/social-cli.js",
+  "type": "module",
+  "bin": {
+    "social-cli": "./dist/bin/social-cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bin/social-cli.js",
+    "dev": "tsx src/bin/social-cli.ts",
+    "watch": "tsc --watch",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration"
+  },
+  "keywords": [
+    "social-media",
+    "cli",
+    "facebook",
+    "instagram",
+    "telegram",
+    "linkedin",
+    "posting",
+    "automation",
+    "typescript",
+    "node",
+    "commander",
+    "media-upload"
+  ],
+
+  "author": "kanawatiabdalrahman@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/Abdo_Ka/social-media-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdo_Ka/social-media-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Abdo_Ka/social-media-cli/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dependencies": {
+    "axios": "^1.9.0",
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "dotenv": "^16.5.0",
+    "figlet": "^1.8.1",
+    "form-data": "^4.0.3",
+    "inquirer": "^12.6.3",
+    "uuid": "^11.0.3",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/inquirer": "^9.0.7",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.5",
+    "@types/uuid": "^10.0.0",
+    "jest": "^29.7.0",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.3.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
